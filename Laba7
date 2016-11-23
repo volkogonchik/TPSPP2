@@ -57,6 +57,20 @@ void Search()
  
 }
  
+ 
+ void Delete()
+{
+elem* tmp; //удаление списка
+while (head != NULL)
+{
+tmp = head->link;
+delete head;
+head = tmp;
+}
+cout « "List is empty!" « endl;
+}
+
+
 int main() {
 	head = NULL;
 	last = NULL;
